@@ -7,6 +7,9 @@ public class Main {
         calculateScore( true, 800, 5, 100);
         calculateScore( false, 10000, 8, 200);
         displayHighScorePosition("Harrison", calculateHighScorePosition(1500));
+        checkNumber(1);
+        checkNumber(-1);
+        checkNumber(0);
     }
 
     public static int calculateScore(boolean gameOver ,int score ,int levelCompleted, int bonus) {
@@ -34,10 +37,50 @@ public class Main {
         } else if (score >= 500){
             myReturn = 2;
         } else if (score >= 100) {
-            myReturn = 5;
+            myReturn = 3;
         }
         return myReturn;
 
     }
 
+    public static void checkNumber(int number) {
+        if (number > 0){
+            System.out.println("positive");
+        } else if (number < 0){
+            System.out.println("negative");
+        } else {
+            System.out.println("equal to 0");
+        }
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
