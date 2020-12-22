@@ -34,7 +34,7 @@ public class Main {
         } else if (score >= 500){
             myReturn = 2;
         } else if (score >= 100) {
-            myReturn = 5;
+            myReturn = 3;
         }
         return myReturn;
 
